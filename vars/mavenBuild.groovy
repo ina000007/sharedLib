@@ -13,7 +13,8 @@ def call(Map config = [:]){
             container('maven') {
                 stage('Build a Maven project') {
                     sh "echo hello from $POD_CONTAINER" // displays 'hello from maven'
-                    sh 'mvn -B -ntp clean install'
+                    sh "ls -lrt"
+                    sh 'mvn clean install'
                 }
             }
         }
