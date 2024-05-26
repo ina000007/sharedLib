@@ -17,7 +17,7 @@ def kubernetesDeploy(){
             gcloud auth activate-service-account --key-file=$SERVICEACCOUNT
             gcloud auth list
             gcloud config set project apt-reality-418106
-            gcloud container clusters get-credentials nishant-ag-cluster --zone us-central1 --project apt-reality-418106
+            gcloud container clusters get-credentials nishant-ag-cluster --zone us-central1-b --project apt-reality-418106
             kubectl get node
         """
     } 
