@@ -8,12 +8,13 @@ def call(Map config = [:]){
         agent any
         environment {
             gitBranch = "${env.BRANCH_NAME}"
-            tag = "1.0.${BUILD_NUMBER}"
+            // tag = "1.0.${BUILD_NUMBER}"
         }
         stages{
             stage("Code Checkout"){
                 steps{
-                    git changelog: false, poll: false, url: gitURL, branch: gitBranch
+                    // git changelog: false, poll: false, url: gitURL, branch: gitBranch
+                     git changelog: false, poll: false, url: gitURL
                 }
             }
             stage("Code Build"){
