@@ -20,8 +20,8 @@ def kubernetesDeploy(){
             gcloud container clusters get-credentials nishant-ag-cluster --zone us-central1-b --project apt-reality-418106
             kubectl get node
             kubectl get pods
-            curl -LO https://get.helm.sh/helm-${HELM_VERSION}-linux-amd64.tar.gz
-            tar -xzvf helm-${HELM_VERSION}-linux-amd64.tar.gz
+            curl -LO https://get.helm.sh/helm-v3.9.0-linux-amd64.tar.gz
+            tar -xzvf helm-v3.9.0-linux-amd64.tar.gz
             sudo mv linux-amd64/helm /usr/local/bin/helm
             helm version
             helm repo add bitnami https://charts.bitnami.com/bitnami
