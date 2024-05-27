@@ -20,7 +20,7 @@ def kubernetesDeploy(){
             gcloud container clusters get-credentials nishant-ag-cluster --zone us-central1-b --project apt-reality-418106
             kubectl get node
             kubectl get pods
-            sudo curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+            curl -LO https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
             helm version
             helm repo add bitnami https://charts.bitnami.com/bitnami
             helm install my-nginx bitnami/nginx
