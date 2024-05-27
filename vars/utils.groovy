@@ -22,7 +22,7 @@ def kubernetesDeploy(){
             kubectl get pods
             curl -LO https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
             chmod +x get-helm-3
-            sudo ./get-helm-3
+            ./get-helm-3
             helm version
             helm repo add bitnami https://charts.bitnami.com/bitnami
             helm install my-nginx bitnami/nginx
