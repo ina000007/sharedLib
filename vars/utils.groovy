@@ -19,6 +19,12 @@ def kubernetesDeploy(){
             gcloud config set project apt-reality-418106
             gcloud container clusters get-credentials nishant-ag-cluster --zone us-central1-b --project apt-reality-418106
             kubectl get node
+            kubectl get pods
+            helm version
+            helm repo add bitnami https://charts.bitnami.com/bitnami
+            helm install my-nginx bitnami/nginx
+            helm status my-nginx
+            kubectl get pods
         """
     } 
 } 
