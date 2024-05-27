@@ -14,7 +14,6 @@ def kubernetesDeploy(){
     withCredentials([file(credentialsId: 'SERVICEACCOUNT', variable: 'SERVICEACCOUNT')]) {
         sh """
             echo $SERVICEACCOUNT
-            sudo su
             gcloud auth activate-service-account --key-file=$SERVICEACCOUNT
             gcloud auth list
             gcloud config set project apt-reality-418106
