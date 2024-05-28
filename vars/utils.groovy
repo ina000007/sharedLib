@@ -23,7 +23,7 @@ def kubernetesDeploy(){
             curl -LO https://get.helm.sh/helm-v3.9.0-linux-amd64.tar.gz
             tar -xzvf helm-v3.9.0-linux-amd64.tar.gz
             cd linux-amd64
-            helm version
+            ./helm version
             helm repo add bitnami https://charts.bitnami.com/bitnami
             helm install my-nginx bitnami/nginx
             helm status my-nginx
