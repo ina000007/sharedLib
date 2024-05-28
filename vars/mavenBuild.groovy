@@ -9,7 +9,6 @@ def call(Map config = [:]){
         environment {
             gitBranch = "${env.BRANCH_NAME}"
             tag = "1.0.${BUILD_NUMBER}"
-            args "-u root"
         }
         stages{
             stage("Code Checkout"){
