@@ -28,6 +28,8 @@ def kubernetesDeploy(){
             ./helm install my-nginx bitnami/nginx
             ./helm status my-nginx
             kubectl get pods
+            ./helm ls
+            kubectl get all
         """
     } 
 } 
