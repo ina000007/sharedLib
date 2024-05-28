@@ -20,8 +20,9 @@ def kubernetesDeploy(){
             gcloud container clusters get-credentials nishant-ag-cluster --zone us-central1-b --project apt-reality-418106
             kubectl get node
             kubectl get pods
-            // curl -LO https://get.helm.sh/helm-v3.9.0-linux-amd64.tar.gz
-            // tar -xzvf helm-v3.9.0-linux-amd64.tar.gz
+            curl -LO https://get.helm.sh/helm-v3.9.0-linux-amd64.tar.gz
+            tar -xzvf helm-v3.9.0-linux-amd64.tar.gz
+            cd linux-amd64/helm
             // mv linux-amd64/helm /usr/local/bin/helm
             // mkdir -p ${WORKSPACE}/helm/bin
             // curl -LO https://get.helm.sh/helm-v3.9.0-linux-amd64.tar.gz
