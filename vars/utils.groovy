@@ -24,9 +24,9 @@ def kubernetesDeploy(){
             tar -xzvf helm-v3.9.0-linux-amd64.tar.gz
             cd linux-amd64
             ./helm version
-            helm repo add bitnami https://charts.bitnami.com/bitnami
-            helm install my-nginx bitnami/nginx
-            helm status my-nginx
+            ./helm repo add bitnami https://charts.bitnami.com/bitnami
+            ./helm install my-nginx bitnami/nginx
+            ./helm status my-nginx
             kubectl get pods
         """
     } 
