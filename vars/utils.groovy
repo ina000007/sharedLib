@@ -22,7 +22,7 @@ def kubernetesDeploy(){
             kubectl get pods
             curl -LO https://get.helm.sh/helm-v3.9.0-linux-amd64.tar.gz
             tar -xzvf helm-v3.9.0-linux-amd64.tar.gz
-            cd linux-amd64/helm
+            cd linux-amd64
             // mv linux-amd64/helm /usr/local/bin/helm
             // mkdir -p ${WORKSPACE}/helm/bin
             // curl -LO https://get.helm.sh/helm-v3.9.0-linux-amd64.tar.gz
