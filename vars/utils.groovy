@@ -25,7 +25,7 @@ def kubernetesDeploy(){
             cd linux-amd64
             ./helm version
             ./helm repo add bitnami https://charts.bitnami.com/bitnami
-            ./helm install my-nginx bitnami/nginx
+            ./helm upgrade my-nginx bitnami/nginx
             ./helm status my-nginx
             kubectl get pods
             ./helm ls
